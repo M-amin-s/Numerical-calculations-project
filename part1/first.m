@@ -22,7 +22,7 @@ function varargout = first(varargin)
 
 % Edit the above text to modify the response to help first
 
-% Last Modified by GUIDE v2.5 11-May-2018 20:37:10
+% Last Modified by GUIDE v2.5 05-Jun-2018 22:11:59
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -391,3 +391,14 @@ function pushbutton1_Callback(hObject, eventdata, handles)
     second(result_error, result_parametrical);
     
     
+
+
+% --- Executes when user attempts to close figure1.
+function figure1_CloseRequestFcn(hObject, eventdata, handles)
+% hObject    handle to figure1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: delete(hObject) closes the figure
+cd ..
+delete(hObject);
